@@ -5,9 +5,13 @@
           box-sizing: border-box;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 993px) {
   .container {
     height: 100vh;
+  }
+  a {
+    text-decoration: none;
+    color: #65201D;
   }
   .nav {
     -webkit-box-sizing: border-box;
@@ -24,9 +28,6 @@
             align-items: center;
     padding: 0 20px;
     background-size: contain;
-  }
-  .nav .menubar i {
-    display: none;
   }
   .nav .logo {
     -webkit-box-sizing: border-box;
@@ -66,7 +67,7 @@
     color: #2C2929;
     background-size: contain;
   }
-  .nav a {
+  .nav .menu a {
     position: relative;
     text-decoration: none;
     color: #2C2929;
@@ -113,6 +114,9 @@
     padding: 5px;
     font-style: bold;
     background-size: contain;
+  }
+  .nav .profileicon {
+    display: none;
   }
   .main {
     -webkit-box-sizing: border-box;
@@ -342,7 +346,8 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    margin: 2% 10% 0 10%;
+    margin-top: 2%;
+    padding: 0 8%;
     font-size: 18px;
     background-size: contain;
   }
@@ -353,15 +358,10 @@
     color: #65201D;
     background-size: contain;
   }
-  .main .box-item-2 {
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    background-size: contain;
-  }
   .main #choose {
     color: #AE1B16;
     border: 2px solid #AE1B16;
-    margin: 0 0 0 24px;
+    margin-left: 24px;
     font-size: 18px;
   }
   .main .main-menu-item-2 {
@@ -370,10 +370,8 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    background-size: contain;
     margin-top: 2%;
-    padding: 0 13%;
-    height: 100%;
+    padding-left: 8%;
     width: 100%;
   }
   .main .movierow {
@@ -382,33 +380,16 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
   .main .movie {
+    margin-right: 8%;
     width: 100%;
-    margin: 0 10% 0 0;
+    height: 100%;
     background-size: contain;
-  }
-  .main .movie:first-child {
-    margin-right: 10%;
-  }
-  .main .view {
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    width: 50%;
-    padding-top: 30%;
-    background-size: contain;
-  }
-  .main .view i {
-    color: #AE1B16;
-    font-size: 24px;
-    padding-left: 30%;
-  }
-  .main .view-item {
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
   }
   .main .image {
     position: relative;
@@ -421,8 +402,6 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 100%;
-    height: 100%;
   }
   .main .image img {
     -webkit-box-sizing: border-box;
@@ -448,10 +427,25 @@
         -ms-flex-pack: justify;
             justify-content: space-between;
     color: #AE1B16;
-    font-size: 12px;
+    font-size: 10px;
     width: 100%;
     height: 100%;
     background-size: contain;
+  }
+  .main .view {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 50%;
+    padding-left: 15%;
+    background-size: contain;
+  }
+  .main .view i {
+    color: #AE1B16;
+    font-size: 24px;
+    padding-left: 15%;
   }
   .main .moviedescription-2 {
     -webkit-box-sizing: border-box;
@@ -487,8 +481,10 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin: 2% 20%;
+    margin-top: 2%;
+    padding: 0 8%;
     background-size: contain;
+    width: 100%;
   }
   .footer .footer-box {
     -webkit-box-sizing: border-box;
@@ -500,7 +496,10 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 100%;
+    padding: 0 4%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -557,9 +556,12 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 767px) and (max-width: 992px) {
   .container {
-    font-size: 14px;
+    height: 100;
+  }
+  a {
+    text-decoration: none;
   }
   .nav {
     -webkit-box-sizing: border-box;
@@ -657,6 +659,9 @@
   .nav .profile-item {
     padding: 5px;
     font-style: bold;
+  }
+  .nav .profileicon {
+    display: none;
   }
   .main {
     -webkit-box-sizing: border-box;
@@ -764,22 +769,31 @@
   .main .action {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
+    width: 60%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin: 5% 0 0 15%;
+    margin: 2% 10%;
+    padding: 0 4%;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     background-size: contain;
   }
   .main .icon i {
-    padding-left: 4px;
+    padding-left: 10px;
+    font-size: 12px;
   }
   .main .action-item {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    font-size: 10px;
+    font-size: 12px;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -787,8 +801,7 @@
         -ms-flex-align: center;
             align-items: center;
     padding: 4px;
-    margin-right: 2%;
-    height: 100%;
+    height: 80%;
     background: -webkit-gradient(linear, left top, right top, color-stop(99.99%, rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0)));
     background: linear-gradient(90deg, rgba(255, 255, 255, 0.7) 99.99%, rgba(255, 255, 255, 0) 100%);
     -webkit-filter: drop-shadow(-4px 4px 4px rgba(0, 0, 0, 0.25));
@@ -813,11 +826,11 @@
         -ms-flex-direction: row;
             flex-direction: row;
     width: 100%;
-    margin: 0 15%;
+    margin: 0 25%;
     background-size: contain;
   }
   .main .rating-item {
-    margin: 1%;
+    margin-right: 2%;
     color: white;
   }
   .main .rating-item-1 {
@@ -886,8 +899,10 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    margin: 2%;
+    margin-top: 2%;
     font-size: 18px;
+    width: 100%;
+    padding: 0 3%;
     background-size: contain;
   }
   .main .box-item-1 {
@@ -895,7 +910,6 @@
             box-sizing: border-box;
     color: #65201D;
     background-size: contain;
-    margin-left: 5%;
   }
   .main .box-item-2 {
     -webkit-box-sizing: border-box;
@@ -913,15 +927,10 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     background-size: contain;
     width: 100%;
+    margin-top: 2%;
+    padding: 0 2%;
   }
   .main .movierow {
     -webkit-box-sizing: border-box;
@@ -929,17 +938,8 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: -webkit-max-content;
-    height: -moz-max-content;
-    height: max-content;
-    margin: 2% 2% 0 8%;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
   }
   .main .movie {
-    width: 50%;
-    height: 50%;
     padding: 0 5%;
     background-size: contain;
   }
@@ -978,7 +978,10 @@
         -ms-flex-pack: justify;
             justify-content: space-between;
     color: #AE1B16;
-    font-size: 12px;
+    font-size: 8px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 100%;
     height: 100%;
     background-size: contain;
@@ -992,7 +995,7 @@
     -webkit-filter: drop-shadow(-4px 4px 4px rgba(0, 0, 0, 0.25));
             filter: drop-shadow(-4px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 10px;
-    padding: 4px 8px;
+    padding: 4px;
     font-size: 10px;
     background-size: contain;
   }
@@ -1002,6 +1005,8 @@
     color: #AE1B16;
     font-size: 12px;
     width: 50%;
+    margin-top: 60px;
+    padding-left: 50%;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -1009,12 +1014,10 @@
   .main .view i {
     color: #AE1B16;
     font-size: 24px;
-    padding: 40% 50% 0 50%;
   }
   .main .view-item {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    padding: 0 0 0 47%;
   }
   .footer {
     -webkit-box-sizing: border-box;
@@ -1037,7 +1040,7 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin: 2%;
+    margin: 2% 10%;
     background-size: contain;
   }
   .footer .footer-box {
@@ -1055,7 +1058,6 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin: 2%;
     background-size: contain;
   }
   .footer .footer-box-item a {
@@ -1112,6 +1114,9 @@
   .container {
     font-size: 14px;
   }
+  a {
+    text-decoration: none;
+  }
   .nav {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -1120,46 +1125,27 @@
     display: flex;
     width: 100%;
     height: 54px;
+    padding-right: 20px;
     background: -webkit-gradient(linear, left top, left bottom, from(#CCABD8), to(#C02425));
     background: linear-gradient(#CCABD8, #C02425);
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    padding: 0 20px;
     background-size: contain;
-  }
-  .nav .menubar i {
-    color: #2C2929;
-    margin-right: 14px;
   }
   .nav .logo {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     height: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    width: 20%;
   }
   .nav .logo img {
     -o-object-fit: cover;
        object-fit: cover;
+    width: 100%;
     height: 100%;
   }
   .nav .menu {
-    display: none;
-  }
-  .nav a {
-    position: relative;
-    text-decoration: none;
-    color: #2C2929;
-  }
-  .nav .profile {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     display: -webkit-box;
@@ -1169,21 +1155,47 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 4px;
-    height: 60%;
-    background: -webkit-gradient(linear, left top, right top, color-stop(98.91%, rgba(255, 255, 255, 0.7)), color-stop(113.57%, rgba(101, 32, 29, 0)));
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0.7) 98.91%, rgba(101, 32, 29, 0) 113.57%);
-    -webkit-filter: drop-shadow(-4px 4px 4px rgba(0, 0, 0, 0.25));
-            filter: drop-shadow(-4px 4px 4px rgba(0, 0, 0, 0.25));
-    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    margin: 0 5%;
     background-size: contain;
   }
-  .nav .profile-item {
-    padding: 5px;
-    font-style: bold;
+  .nav .menu-item {
+    padding: 3%;
+    font-size: 14px;
+    font-style: normal;
+    color: #2C2929;
+    background-size: contain;
+  }
+  .nav .menu a {
+    position: relative;
+    text-decoration: none;
+    color: #2C2929;
+  }
+  .nav a:hover {
+    color: #ffffff;
+  }
+  .nav .menu-item a:hover::after {
+    content: "";
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    bottom: 0;
+    border: 1px solid white;
+    margin: -2px;
+  }
+  .nav .profile {
+    display: none;
+  }
+  .nav .profileicon {
+    font-size: 24px;
+    color: white;
   }
   .main {
     -webkit-box-sizing: border-box;
@@ -1227,7 +1239,9 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    margin: 2%;
+    font-size: 16px;
+    margin-top: 2%;
+    padding: 0 5%;
     background-size: contain;
   }
   .main .box-item-1 {
@@ -1235,7 +1249,6 @@
             box-sizing: border-box;
     color: #65201D;
     background-size: contain;
-    margin-left: 5%;
   }
   .main .box-item-2 {
     -webkit-box-sizing: border-box;
@@ -1244,8 +1257,8 @@
   }
   .main #choose {
     color: #AE1B16;
+    font-size: 12px;
     border: 1px solid #AE1B16;
-    font-size: 10px;
   }
   .main .main-menu-item-2 {
     -webkit-box-sizing: border-box;
@@ -1269,10 +1282,10 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin-top: 2%;
     height: -webkit-max-content;
     height: -moz-max-content;
     height: max-content;
-    margin: 2% 2% 0 8%;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -1345,6 +1358,7 @@
         -ms-flex-align: center;
             align-items: center;
     margin: 22%;
+    padding: 20%;
   }
   .main .view i {
     color: #AE1B16;
@@ -1397,7 +1411,7 @@
         -ms-flex-align: center;
             align-items: center;
     background-size: contain;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
   }
   .footer .footer-box-item a {
     text-decoration: none;
@@ -1419,7 +1433,6 @@
   }
   .footer .footer-box-item:first-child {
     font-size: 14px;
-    padding-bottom: 2%;
   }
   .footer .image3 {
     width: 20%;
